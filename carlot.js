@@ -1,16 +1,13 @@
 "use strict"
 
-
-
-
 //*******Original iife********//
 var CarLot = (function(){
   // Array to push JSON object into//
   let carArray = [];
 
 return{
-  loadInventory: function (){
-
+  
+  loadInventory: function (populatePageCallback){
 //*******Create an XHR object*******//  
     let carRequest = new XMLHttpRequest();
 
@@ -21,25 +18,16 @@ return{
       let newCarObj = (JSON.parse(this.responseText).cars);
         newCarObj.forEach(function(oneXHR){
         carArray.push(oneXHR);
-        console.log("array", carArray);
-
+        
     })
+  //*******Adding object to be passed into callback*******//        
+        populatePageCallback(carArray)
   })
-//*******Telling XHR *******//  
+//*******Telling XHR what to get/go get it *******//  
     carRequest.open("GET", "inventory.json");
     carRequest.send();
-}
 
-
-
-
-
-}
-
-
-
-
-
-
-})(CarLot);
-CarLot.loadInventory();
+    }
+  }
+})();
+CarLot.loadInventory(populatePage);
