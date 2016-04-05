@@ -4,7 +4,7 @@
       "make": "Porsche",
       "model": "911",
       "year": "2012",
-      "price": "85000",
+      "price": "$85000",
       "color": "FireBrick",
       "purchased": false,
       "description": "This is an immaculate 2012 911 Porsche with only 25000 miles on it. Leather seats, power everything."
@@ -13,7 +13,7 @@
       "make": "Lamborghini",
       "model": "Diablo",
       "year": "2001",
-      "price": "225000",
+      "price": "$225000",
       "color": "RoyalBlue",
       "purchased": false,
       "description": "This is an immaculate 2001 Lamborghini Diablo with only 25000 miles on it. Leather seats, power everything."
@@ -22,7 +22,7 @@
       "make": "Ferrari",
       "model": "360 Modena",
       "year": "2003",
-      "price": "500000",
+      "price": "$500000",
       "color": "Gold",
       "purchased": false,
       "description": "This is an immaculate 2003 Ferrari 360 Modena with only 25000 miles on it. Leather seats, power everything."
