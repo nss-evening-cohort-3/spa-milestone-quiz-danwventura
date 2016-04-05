@@ -16,12 +16,12 @@ return{
 
 //*******Parsing JSON and looping looping through JS object to push each object into private array*******//  
       let newCarObj = (JSON.parse(this.responseText).cars);
-        newCarObj.forEach(function(oneXHR){
+      newCarObj.forEach(function(oneXHR){
         carArray.push(oneXHR);
         
-    })
+      })
   //*******Adding object to be passed into callback*******//        
-        populatePageCallback(carArray)
+        populatePageCallback(carArray);
   })
 //*******Telling XHR what to get/go get it *******//  
     carRequest.open("GET", "inventory.json");
@@ -30,4 +30,4 @@ return{
     }
   }
 })();
-CarLot.loadInventory(populatePage);
+
