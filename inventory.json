@@ -7,7 +7,7 @@
       "price": "$85000",
       "color": "FireBrick",
       "purchased": false,
-      "description": "This is an immaculate 2012 911 Porsche with only 25000 miles on it. Leather seats, power everything."
+      "description": "This is a faulty 2012 911 Porsche with only 25000 miles on it. Leather seats, power everything."
     },
     {
       "make": "Lamborghini",
@@ -25,7 +25,7 @@
       "price": "$500000",
       "color": "Gold",
       "purchased": false,
-      "description": "This is an immaculate 2003 Ferrari 360 Modena with only 25000 miles on it. Leather seats, power everything."
+      "description": "This is a terrible 2003 Ferrari 360 Modena with only 25000 miles on it. Leather seats, power everything."
     }
   
 
