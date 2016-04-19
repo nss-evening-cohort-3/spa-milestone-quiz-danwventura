@@ -39,26 +39,30 @@ var CarLot = (function(originalCarLot){
   originalCarLot.setAtt = function(theDiv, carColor){
     
     theDiv.classList.add("selected")
-    originalCarLot.newDesc(theDiv);
+    originalCarLot.clearField(theDiv);
   },
 //*******Function to mirror user input to car description********//
 
   
-  originalCarLot.newDesc = function(theDiv){
-    console.log("theDiv", theDiv );
-    let carDesc = theDiv.querySelector("h4");
-  
+  originalCarLot.clearField = function(theDiv){
 
     inputField.value = "";
     inputField.focus();
+    originalCarLot.carDesc(theDiv)
+},
 
+  originalCarLot.carDesc = function(theDiv){
+   // let carDesc = "";
+       // console.log("div", theDiv);
+    let carDesc = theDiv.querySelector("h4");
     inputField.addEventListener("keyup", function(){
+      console.log("carDesc", carDesc);
+  if (theDiv.classList.contains("selected")) {
       carDesc.innerHTML = inputField.value;
-
-      
-    })
-
-  }
+      console.log("carDesc", carDesc);
+    }
+  })
+}
 
 
 
