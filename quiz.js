@@ -17,7 +17,7 @@ var CarLot = (function(originalCarLot){
       outputString += `<h6> Price: ${currentCar.price} </h6>`
       outputString += `<h5 id="${currentCar.color}"> Color: ${currentCar.color}</h5>`
       outputString += `<h6> Availability: ${currentCar.purchased}</h6>`
-      outputString += `<h4 id="${currentCar.description}"> Desc: <p>${currentCar.description}</p></h4>`
+      outputString += `<h4> Desc: ${currentCar.description}</h4>`
       outputString += `</div>`
       carContainer.innerHTML = outputString;
   }
