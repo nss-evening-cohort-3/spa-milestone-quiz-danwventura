@@ -6,7 +6,7 @@ var CarLot = (function(){
   let carArray = [];
 
 return{
-  
+  // Creating property on original CarLot
   loadInventory: function (populatePageCallback){
 //*******Create an XHR object*******//  
     let carRequest = new XMLHttpRequest();

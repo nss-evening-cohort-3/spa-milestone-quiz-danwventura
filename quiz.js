@@ -28,4 +28,8 @@ var CarLot = (function(originalCarLot){
 return originalCarLot
 })(CarLot || {});
 
+
+// Calling loadInventory which passes populatePage carArray and builds string/prints to DOM
 CarLot.loadInventory(CarLot.populatePage);
+
+
