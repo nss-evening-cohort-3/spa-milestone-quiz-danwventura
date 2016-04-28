@@ -1,0 +1,8 @@
+.col-md-4{
+  border-style: solid;
+  border-size: 6px;
+}
+.selected{
+  border: solid 14px;
+  background-color: aquamarine;
+}
